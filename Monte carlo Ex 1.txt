@@ -1,0 +1,15 @@
+n=100000
+
+
+x=np.random.uniform(low=-1,high=1, size=n)
+y=np.random.uniform(low=-1,high=1, size=n)
+ 
+d = ( (x**2)+(y**2))**0.5
+
+Area = 4*sum(d<=1)/n
+
+
+
+inout=np.where(d<=1,)
+ 
+sns.scatterplot(x,y)
